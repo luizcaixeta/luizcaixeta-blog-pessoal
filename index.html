@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luiz Caixeta | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Estilos adicionais para o novo layout */
+    .about-content {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .about-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .about-main {
+      flex: 2;
+    }
+    
+    .skills-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+    }
+    
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skills-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Luiz Caixeta</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#projectsAnaliseDeDados">Análise de dados</a></li>
+        <li><a href="#projectsCienciaDeDados">Ciência de dados</a></li>
+        <li><a href="#projectsMLeIA">Machine Learning e IA</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="images/foto-perfil.jpg" alt="Luiz Caixeta" class="profile-pic">
+      <h1>Olá, eu sou <span class="highlight">Luiz Caixeta</span></h1>
+      <p class="subtitle">Data Scientist | Machine Learning Engineer | Data Analyst </p>
+      <div class="buttons">
+        <a href="#contact" class="btn btn-primary">Vamos conversar</a>
+        <a href="#projects" class="btn btn-secondary">Ver Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="about" class="about">
+    <h2>Sobre Mim</h2>
+    <div class="about-content">
+        <!-- Card principal -->
+        <div class="about-card about-main">
+          <p></p>Graduado em Física e mestrando em modelos de Inteligência Artificial, ao longo da minha jornada adquiri uma sólida experiência em <strong>Análise de Dados</strong> e 
+          <strong>Ciência de Dados</strong>, 
+            com foco em transformar dados em insights estratégicos. Domino ferramentas como <strong>Power BI</strong> e 
+            <strong>Excel</strong> para criação de dashboards interativos, além de <strong>Python</strong> e <strong>SQL</strong> 
+            para tratamento, análise exploratória e <strong>modelagem preditiva</strong> de dados. Tenho experiência com projetos que envolvem web scraping e 
+            processos <strong>ETL</strong>.</p> <p> Ao longo do mestrado, trabalhei com <strong>Machine Learning</strong>, 
+              <strong>NLP</strong> e <strong>Visão Computacional</strong>, utilizando frameworks como <strong>Scikit-learn</strong>, 
+              <strong>TensorFlow</strong> e <strong>PyTorch</strong>. Tenho experiência com bibliotecas para Big Data como <strong>Dask</strong> e 
+              <strong>Polars</strong>, além de conhecimentos em <strong>JavaScript</strong>, 
+            <strong>HTML/CSS</strong> e <strong>C++</strong> para integrar soluções analíticas em diferentes ambientes. </p>
+        </div>
+      
+      <!-- Cards à direita -->
+      <div class="skills-card">
+        <!-- Card de linguagens em cima -->
+        <div class="about-card">
+          <h3>Linguagens e Tecnologias</h3>
+
+          <ul class="skills-list">
+
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-database"></i> SQL & Big Data</li>
+            <li><i class="fas fa-database"></i> Excel & Power BI</li>
+            <li><i class="fas fa-code"></i> JavaScript</li>
+            <li><i class="fa-solid fa-code"></i>HTML e CSS</li>
+            <li><i class="fa-brands fa-microsoft"></i>C++</li>
+          
+          </ul>
+        </div>
+        
+        <!-- Card de habilidades de IA embaixo -->
+        <div class="about-card">
+
+          <h3>Habilidades em IA</h3>
+
+          <ul class="skills-list">
+
+            <li><i class="fas fa-brain"></i> Machine Learning</li>
+            <li><i class="fas fa-chart-line"></i> Análise Preditiva</li>
+            <li><i class="fas fa-robot"></i> TensorFlow/PyTorch</li>
+            <li><i class="fas fa-comment-alt"></i>NLP</li>
+            <li><i class="fas fa-eye"></i> Visão Computacional</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projectsAnaliseDeDados" class="projects">
+    <h2>Análise de dados e construção de dashboards</h2>
+    <div class="projects-grid">
+  
+      <!-- Card 1 -->
+      <div class="project-card">
+        <img src="images/analyticsinsight_2024-11-18_77f6uw7q_Tesla-Share-Price-Analysis.avif" alt="Análise Airbnb Nova York">
+        <div class="project-content">
+          <h3>Análise de dados da Tesla (2010 - 2020)</h3>
+          <p class="project-description">Criação de um dashboard interativo no Power BI para analisar os dados de vendas da Tesla entre 2010 e 2020. Os dados foram tratados e preparados com Python e Excel, incluindo limpeza, padronização de datas e análise exploratória inicial. No Power BI, foi feita a modelagem relacional e a criação de medidas com DAX para calcular métricas como crescimento anual, receita acumulada e variação de vendas. O dashboard apresenta visualizações dinâmicas que permitem explorar o desempenho da Tesla ao longo dos anos por país, modelo e período, oferecendo insights claros sobre a evolução das vendas e o crescimento da empresa.</p>
+          
+          <div class="tech-stack-container">
+            <div class="tech-stack">
+              <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Pandas|SQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Power BI</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Excel</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="project-card">
+        <img src="images/projeto7.png" alt="Análise Airbnb Nova York">
+        <div class="project-content">
+          <h3>Análise e previsão de visualização em animes utilizando o IMDb</h3>
+          <p class="project-description">Este projeto utiliza técnicas de web scraping para extrair dados do IMDb, focando no anime Naruto Shippuden como estudo de caso. Os dados coletados (como avaliações, temporadas e detalhes do elenco) passaram por um processo de ETL. Para análise dos resultados, foi feito um dashboard de estudo utilizando Power BI.</p>
+          
+          <div class="tech-stack-container">
+            <div class="tech-stack">
+              <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Ciência de dados</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-language"></i>
+                <span>NLTK</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Modelo preditivo</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-blog"></i>
+                <span>Web Scraping</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Pandas|SQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-laptop-file"></i>
+                <span>Dask DataFrame</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Power BI</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              
+            </div>
+            
+            <div class="project-actions">
+              <a href="https://github.com/luizcaixeta/airbnb-pricing-new-york" class="btn-github" target="_blank">
+                <i class="fab fa-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Projetos -->
+<section id="projectsCienciaDeDados" class="projects">
+  <h2>Ciências de dados e modelos de previsão</h2>
+  <div class="projects-grid">
+
+    <!-- Card 1 -->
+    <div class="project-card">
+      <img src="images/projeto2.jpg" alt="Análise Airbnb Nova York">
+      <div class="project-content">
+        <h3>Análise e Previsão de Preços de Imóveis no Airbnb em Nova York</h3>
+        <p class="project-description">Neste projeto, foi utilizado um conjunto de dados de anúncios de Airbnb na cidade de Nova York. Melhoramos a análise incorporando dados externos com Web Scraping. Então, foi realizada uma EDA buscando identificar outliers e insights, permitindo o desenvolvimento de um modelo de Machine Learning para previsão de preços com base nas variáveis coletadas.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-language"></i>
+              <span>NLTK</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Modelo preditivo</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-blog"></i>
+              <span>Web Scraping</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Pandas|SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Dask DataFrame</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Power BI</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/airbnb-pricing-new-york" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Airbnb-Symbol.jpg" alt="Análise Airbnb Nova York">
+      <div class="project-content">
+        <h3>Airbnb price checker</h3>
+        <p class="project-description">Com o objeto de reduzir o tempo de procura para encontrar o lugar ideal para se hospedar no Airbnb em Nova York, desenvolvi uma API e uma extensão para o Google Chrome que avalia se os preços dos imóveis estão justos, com base em um modelo de machine learning treinado com dados públicos e da própria plataforma. Além disso, a extensão é capaz de informar a proximidade do imóvel em relação a estações de metrô, pontos de ônibus e pontos turísticos, facilitando a escolha do lugar ideal. Foi implementada um pipeline completo, desde a coleta e processamento dos dados até a previsão de preços, cálculo de proximidade dos pontos turísticos e transportes.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-language"></i>
+              <span>NLTK</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Modelo preditivo</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-blog"></i>
+              <span>Web Scraping</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Pandas|SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Dask DataFrame</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>HTML</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>CSS</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Flask</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Desenvolvimento de API</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Power BI</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/airbnb-pricing-new-york" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card">
+      <img src="images/projeto8.jpg" alt="Recomendação de Filmes">
+      <div class="project-content">
+        <h3>Modelo de recomendação de filmes</h3>
+        <p class="project-description">Neste projeto, foi utilizado um conjunto de dados do Netflix Prize contendo avaliações de filmes feitas por diferentes usuários. Para melhorar a qualidade das recomendações, foi aplicada a técnica de Filtragem Colaborativa baseada em Vizinhos Próximos (User-User CF). Inicialmente, foi realizada uma EDA para entender a distribuição das avaliações e identificar padrões de similaridade entre os usuários. Em seguida, foram aplicadas métricas de distância para encontrar usuários com gostos semelhantes, permitindo a recomendação de novos filmes com base nas preferências desses vizinhos.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-language"></i>
+              <span>NLTK</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-braille"></i>
+              <span>Modelo de vizinhos</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-blog"></i>
+              <span>Web Scraping</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Pandas|SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Dask DataFrame</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/sistema-recomendacao-filmes-" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card">
+      <img src="images/projeto7.png" alt="Análise IMDb">
+      <div class="project-content">
+        <h3>Web Scraping e Análise de Dados do IMDb</h3>
+        <p class="project-description">Este projeto utiliza técnicas de web scraping para extrair dados do IMDb, focando no anime Naruto Shippuden como estudo de caso. Os dados coletados (como avaliações, temporadas e detalhes do elenco) passaram por um processo de ETL. Para análise dos resultados, foi feito um dashboard de estudo utilizando Power BI.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-blog"></i>
+              <span>Web Scraping</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Análise de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-blog"></i>
+              <span>Processo ETL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Power BI</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/web-scraping-IMDb" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card">
+      <img src="images/projeto3.jpg" alt="Previsão de Doenças Cardíacas">
+      <div class="project-content">
+        <h3>Modelo de previsão de doenças cardíacas</h3>
+        <p class="project-description">Neste projeto, utilizamos um conjunto de dados do Kaggle com dados médicos de pacientes homens e mulheres. Foi realizado uma EDA para entender o funcionamento dos dados e o comportamento dos pacientes. O objetivo desse projeto é desenvolver um modelo de classificação para determinar se, de acordo com os dados médicos de um paciente ele é classificado como 1 (portador de doença cardíaca) ou 0 (sem doença cardíaca).</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Modelo de classificação</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Power BI</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/Modelo-para-previsao-de-doencas-cardiacas" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projectsMLeIA" class="projects">
+  <h2>Deep Learning e visão computacional</h2>
+  <div class="projects-grid">
+
+    <!-- Card 5 -->
+    <div class="project-card">
+      <img src="images/projeto4.png" alt="Reconhecimento de Dígitos">
+      <div class="project-content">
+        <h3>Modelo para reconhecimento de dígitos</h3>
+        <p class="project-description">Este projeto utiliza o dataset Digit Recognizer do Kaggle para treinar uma Rede Neural Convolucional (CNN) capaz de reconhecer dígitos escritos à mão. Além de treinar o modelo e realizar previsões, o projeto também inclui a visualização dos neurônios ativos durante o processo de previsão, fornecendo insights sobre como a CNN toma suas decisões.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Modelo de classificação</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>TensorFlow/Keras</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-comment-nodes"></i>
+              <span>Redes neurais</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/digit-recognizer" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="project-card">
+      <img src="images/projeto5.webp" alt="Classificação de Cães e Gatos">
+      <div class="project-content">
+        <h3>CNN para classificação de imagens</h3>
+        <p class="project-description">Este repositório contém um estudo completo sobre a construção de uma Rede Neural Convolucional (CNN) para classificação de imagens de cães e gatos. O projeto foi desenvolvido em um Jupyter Notebook e aborda desde o pré-processamento dos dados até a avaliação do modelo final.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Ciência de dados</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Modelo de classificação</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>TensorFlow/Keras</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-comment-nodes"></i>
+              <span>Redes neurais</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-laptop-file"></i>
+              <span>Transfer Learning</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/classificacao-caes-gatos-estudo-CNN" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="project-card">
+      <img src="images/projeto6.png" alt="Segmentador de Caracteres">
+      <div class="project-content">
+        <h3>Segmentador de caracteres</h3>
+        <p class="project-description">Em muitos projetos de visão computacional, é essencial extrair e isolar caracteres específicos de imagens contendo textos. Este repositório tem como objetivo fornecer uma solução para essa tarefa, segmentando caracteres de imagens de maneira eficiente e preparando-os para reconhecimento por modelos de inteligência artificial.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Modelo de classificação</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>OpenCV</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://github.com/luizcaixeta/segmentador-de-caracteres" class="btn-github" target="_blank">
+              <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <style>
+    /* Estilos para a seção de projetos */
+    .projects {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .project-content {
+      padding: 20px;
+    }
+    
+    .project-description {
+      color: #555;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .tech-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #f0f0f0;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    
+    .tech-item i {
+      color: #2c3e50;
+    }
+    
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    
+    .btn-github:hover {
+      background: #1a252f;
+    }
+    
+    .btn-github i {
+      font-size: 1.2rem;
+    }
+  </style>
+
+<!-- Projetos -->
+<!-- Artigos Publicados -->
+<section id="artigos" class="projects"> <!-- Use a mesma classe projects para manter consistência -->
+  <h2>Artigos Publicados</h2>
+  <div class="projects-grid"> <!-- Use a mesma classe do grid de projetos -->
+
+    <!-- Card 1 -->
+    <div class="project-card"> <!-- Use a mesma classe dos cards de projeto -->
+      <img src="images/projeto1.png" alt="Publicação Científica">
+      <div class="project-content">
+        <h3>Publicação como autor principal na revista científica Chaos</h3>
+        <p class="project-description">Slow–fast dynamics are intrinsically related to complex phenomena and are responsible for many of the homeostatic dynamics that keep biological systems healthy functioning. We study a discrete-time membrane potential model that can generate a diverse set of spiking behavior depending on the choice of slow–fast time scales, from fast spiking to bursting, or plateau action potentials—also known as cardiac spikes since they are characteristic in heart myocytes. The plateau of cardiac spikes can lose stability, generating early or delayed afterdepolarizations (EADs and DADs, respectively), both of which are related to cardiac arrhythmia. We show the periodicity changes along the transition from the healthy action potentials to these impaired oscillations. We show that while EADs are mainly periodic attractors, DADs usually come with chaos. EADs are found inside shrimp-shaped regions of the parameter space. However, in our system, multiple periodic attractors live within a shrimp-shaped region, giving it an internal structure made of infinite transitions between periodicities forming a complete devil’s staircase. Understanding the periodicity of plateau attractors in slow–fast systems could be useful in unveiling the characteristics of heart myocyte behaviors that are linked to cardiac arrhythmias.</p>
+        
+        <div class="tech-stack-container">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-computer"></i>
+              <span>Fortran</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-brain"></i>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-database"></i>
+              <span>Pandas</span>
+            </div>
+            <div class="tech-item">
+                <i class="fa-solid fa-bug"></i>
+                <span>Polars</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-keyboard"></i>
+              <span>OverLeaf</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Machine Learning</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Neuronal models</span>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://doi.org/10.1063/5.0250342" class="btn-github" target="_blank">
+              <i class="fa-solid fa-newspaper"></i> Ver artigo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h3>Vamos conversar!</h3>
+    <div class="social-links">
+      <a href="https://github.com/luizcaixeta"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/luiz-caixeta/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Email: <a href="mailto:luiz@exemplo.com">luizfbcaixeta@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Botão Voltar ao Topo
+    const backToTopButton = document.createElement('div');
+    backToTopButton.className = 'back-to-top';
+    backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    document.body.appendChild(backToTopButton);
+  
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+  
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+    // Adiciona classe de hover persistente para os ícones de tecnologia
+    document.querySelectorAll('.tech-item').forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.querySelector('i').style.transform = 'scale(1.2)';
+      });
+      item.addEventListener('mouseleave', () => {
+        item.querySelector('i').style.transform = 'scale(1)';
+      });
+    });
+  </script>
+
+</body>
+</html>
